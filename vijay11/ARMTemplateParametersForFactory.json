@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "vijay11"
+		},
+		"AzureSqlDatabase_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase_properties_privateLinkResourceId": {
+			"value": "/subscriptions/848bffad-a9ae-486f-a160-76388acf2e31/resourceGroups/rg/providers/Microsoft.Sql/servers/adfdbserver1"
+		},
+		"AzureSqlDatabase_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"AzureSqlDatabase_properties_fqdns": {
+			"value": [
+				"adfdbserver1.database.windows.net"
+			]
+		}
+	}
+}
