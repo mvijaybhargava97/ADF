@@ -8,8 +8,7 @@
 			"defaultValue": "vijay11"
 		},
 		"AzureSqlDatabase_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase'"
+			"type": "secureString"
 		},
 		"AzureSqlDatabase_properties_privateLinkResourceId": {
 			"type": "string",
@@ -62,7 +61,10 @@
 				"annotations": [],
 				"type": "AzureSqlDatabase",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureSqlDatabase_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('AzureSqlDatabase_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "ManagedIR",
