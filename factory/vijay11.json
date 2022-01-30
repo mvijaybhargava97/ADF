@@ -1,0 +1,9 @@
+{
+	"name": "vijay11",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "82f28bc2-af88-4ab6-81c1-80755cfd6dac",
+		"tenantId": "808cc83e-a546-47e7-a03f-73a1ebba24f3"
+	}
+}

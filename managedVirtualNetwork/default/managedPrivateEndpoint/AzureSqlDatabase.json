@@ -1,0 +1,10 @@
+{
+	"name": "AzureSqlDatabase",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/848bffad-a9ae-486f-a160-76388acf2e31/resourceGroups/rg/providers/Microsoft.Sql/servers/adfdbserver1",
+		"groupId": "sqlServer",
+		"fqdns": [
+			"adfdbserver1.database.windows.net"
+		]
+	}
+}
