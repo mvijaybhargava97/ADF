@@ -11,9 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase'"
 		},
-		"AzureSqlDatabase_properties_typeProperties_connectionString": {
-			"type": "string"
-		},
 		"AzureSqlDatabase_properties_privateLinkResourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/848bffad-a9ae-486f-a160-76388acf2e31/resourceGroups/rg/providers/Microsoft.Sql/servers/adfdbserver1"
@@ -62,13 +59,16 @@
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"parameters": {
+					"dbServer": {
+						"type": "String",
+						"defaultValue": "adfdbserver1.database.windows.net"
+					}
+				},
 				"annotations": [],
 				"type": "AzureSqlDatabase",
 				"typeProperties": {
-					"connectionString": {
-						"type": "SecureString",
-						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_connectionString')]"
-					}
+					"connectionString": "[parameters('AzureSqlDatabase_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "ManagedIR",
