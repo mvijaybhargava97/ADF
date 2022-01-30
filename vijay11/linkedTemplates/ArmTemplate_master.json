@@ -11,6 +11,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase'"
 		},
+		"AzureSqlDatabase_properties_parameters_dbServer": {
+			"type": "object"
+		},
 		"AzureSqlDatabase_properties_privateLinkResourceId": {
 			"type": "string",
 			"defaultValue": "/subscriptions/848bffad-a9ae-486f-a160-76388acf2e31/resourceGroups/rg/providers/Microsoft.Sql/servers/adfdbserver1"
@@ -63,6 +66,9 @@
 					},
 					"AzureSqlDatabase_properties_fqdns": {
 						"value": "[parameters('AzureSqlDatabase_properties_fqdns')]"
+					},
+					"AzureSqlDatabase_properties_parameters_dbServer": {
+						"value": "[parameters('AzureSqlDatabase_properties_parameters_dbServer')]"
 					}
 				}
 			},
