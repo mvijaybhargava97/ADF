@@ -116,9 +116,6 @@
                     "connectionString": "|:-connectionString:secureString",
                     "hostKeyFingerprint": "=",
                     "mlWorkspaceName": "="
-                },
-                "parameters": {
-                    "dbServer": "-"
                 }
             }
         },
