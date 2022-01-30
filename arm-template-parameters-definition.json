@@ -117,7 +117,7 @@
                     "hostKeyFingerprint": "=",
                     "mlWorkspaceName": "="
                 },
-                "parameters":{
+                "parameters": {
                     "dbServer": "-"
                 }
             }
