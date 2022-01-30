@@ -8,7 +8,8 @@
 			"defaultValue": "vijay11"
 		},
 		"AzureSqlDatabase_connectionString": {
-			"type": "secureString"
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase'"
 		},
 		"AzureSqlDatabase_properties_privateLinkResourceId": {
 			"type": "string",
