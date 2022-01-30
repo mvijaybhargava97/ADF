@@ -8,9 +8,6 @@
 		"AzureSqlDatabase_connectionString": {
 			"value": ""
 		},
-		"AzureSqlDatabase_properties_parameters_dbServer": {
-			"value": ""
-		},
 		"AzureSqlDatabase_properties_privateLinkResourceId": {
 			"value": "/subscriptions/848bffad-a9ae-486f-a160-76388acf2e31/resourceGroups/rg/providers/Microsoft.Sql/servers/adfdbserver1"
 		},
